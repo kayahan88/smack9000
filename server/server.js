@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const {SERVER_PORT} = process.env;
 
 
 // app.use(express.json());
@@ -10,6 +11,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../build/index.html'))
 })
 
-app.listen(3000, () => {
-    console.log('Server running on port 3000')
+app.listen(SERVER_PORT, () => {
+    console.log(`Server running on port ${SERVER_PORT}`)
 })
