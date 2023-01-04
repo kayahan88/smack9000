@@ -12,5 +12,5 @@ app.get('*', (req, res) => {
 })
 
 app.listen(SERVER_PORT, () => {
-    console.log(`Server running on port ${SERVER_PORT}`)
+    console.log(`Mana ramping on port ${SERVER_PORT}`)
 })
